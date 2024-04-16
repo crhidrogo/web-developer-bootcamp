@@ -23,7 +23,7 @@ ol, ul {
     width: 100%;
     max-width: 960px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*mobile first*/
     text-align: center;
     text-transform: uppercase;
 }
@@ -95,4 +95,18 @@ ol, ul {
 
 .pricing-button.pricing-button.is-featured:hover, .pricing-button.pricing-button.is-featured:focus {
     background-color: #269aff;
+}
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: solid 1px #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
