@@ -46,20 +46,22 @@
                     <input type="password" name="password" id="passwrd" minlength="12" class="form-control" required>
                 </div>
             </div>
-            <div class="">
-                <label for="age-group" class="form-label">Select Age Group</label>
-                <select name="age" id="age-group" class="form-select">
-                    <option selected>--Please select an option</option>
-                    <option value="under18">Under 18</option>
-                    <option value="young-adult">18-30</option>
-                    <option value="adult">31-64</option>
-                    <option value="senior">65+</option>
-                </select>
-            </div>
-            <div class="mb-1">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" value="donate" id="defaultCheck" class="custom-control-input">
-                    <label for="form-label defaultCheck" class="custom-control-label">Donate to charity?</label>
+            <div class="row">
+                <div class="col-md-8">
+                    <label for="age-group" class="form-label">Select Age Group</label>
+                    <select name="age" id="age-group" class="form-select">
+                        <option selected>--Please select an option</option>
+                        <option value="under18">Under 18</option>
+                        <option value="young-adult">18-30</option>
+                        <option value="adult">31-64</option>
+                        <option value="senior">65+</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-check">
+                        <input type="checkbox" value="donate" id="defaultCheck" class="form-check-input" checked>
+                        <label for="defaultCheck" class="form-check-label">Donate to charity?</label>
+                    </div>
                 </div>
             </div>
             <button type="submit" class="btn btn-outline-primary">Register!</button>
