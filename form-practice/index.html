@@ -7,6 +7,60 @@
     <title>HTML Forms</title>
 </head>
 <body>
-    
+    <h1>Form Demo</h1>
+    <p>Labels use the <code>for=</code> attribute to match the label with its input. Input uses the <code>id</code> attribute to match to the label element.</p>
+    <form action="/tacos">
+        <p>
+            <label for="username">Please Enter:</label>
+            <input type="text" placeholder="username" id="username" name="usr">
+            <label for="password">Also Enter:</label>
+            <input type="password" placeholder="password" id="password" name="passwd">
+        </p>
+        <label>
+            <input type="number">
+        </label>
+        <p>
+            <label for="date"></label>
+            <input type="date" name="date" id="date">
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+    <p>the <code>name</code> attribute is used in the url query for the form, <code> name ="query" google.com?query="dog"</code>.</p>
+    <h2>Search Reddit Form</h2>
+    <form action="https://www.reddit.com/search">
+        <label for="query"></label>
+        <input type="text" id="query" placeholder="search query" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+    <h2>More Input Types</h2>
+    <p>The input type is dictated by the <code>type="checkbox"</code> attribute.</p>
+    <form action="">
+        <h3>checkbox Inputs</h3>
+        <label for="tos">Do you agree to the Terms of Service?</label>
+        <input type="checkbox" id="agree_tos" name="tos">
+        
+        <h3>Radio Inputs</h3>
+        <p>For radio buttons, we use the <code>name</code> attribute to define what data we're sending. We then use the <code>value</code> attribute to send a certain value for the variable name.</p>
+        <label for="xs">XS</label>
+        <input type="radio" name="size" id="xs" value="xs">
+        <label for="s">S</label>
+        <input type="radio" name="size" id="s" value="s">
+        <label for="m">M</label>
+        <input type="radio" name="size" id="m" value="m">
+
+        <h3>Option Inputs</h3>
+        <p>For <code>option</code> inputs we use the <code>select</code> element to definte the <code>name</code> and <code>id</code> for the selection.</p>
+        <p>Each <code>option</code> has the <code>value</code> attribute to attach a value for the <code>name</code> attribute in the <code>select</code> element.</p>
+
+        <label for="pet-select">Select your pet:</label>
+        <select name="pets" id="pet-select">
+            <option value="">--Please select an option</option>
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+            <option value="fish">Goldfish</option>
+        </select>
+        <button>Submit</button>
+    </form>
 </body>
 </html>
