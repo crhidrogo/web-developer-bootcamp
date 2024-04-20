@@ -21,25 +21,33 @@
                     <input type="text" id="lastname" name="lastname" class="form-control" required>
                 </div>
             </div>
-            <div class="">
-                <span>Select a Race:</span>
-                <label for="funrun">Fun Run 5K</label>
-                <input type="radio" name="race" id="funrun" value="funrun">
-                <label for="half">Half-Marathon</label>
-                <input type="radio" name="race" id="half" value="half">
-                <label for="full">Full-Marathon</label>
-                <input type="radio" name="race" id="full" value="full">
+            <span class="form-text">Select a Race:</span>
+            <div class="form-check">
+                <div>
+                    <input type="radio" name="race" id="funrun" value="funrun">
+                    <label for="form-label funrun">Fun Run 5K</label>
+                </div>
+                <div>
+                    <input type="radio" name="race" id="half" value="half">
+                    <label for="form-label half">Half-Marathon</label>
+                </div>
+                <div>
+                    <input type="radio" name="race" id="full" value="full">
+                    <label for="form-label full">Full-Marathon</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="form-label email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="form-label passwrd">Password</label>
+                    <input type="password" name="password" id="passwrd" minlength="12" class="form-control" required>
+                </div>
             </div>
             <div class="">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" required>
-            </div>
-            <div class="">
-                <label for="passwrd">Password</label>
-                <input type="password" name="password" id="passwrd" minlength="12" class="form-control" required>
-            </div>
-            <div class="">
-                <label for="age-group">Select Age Group</label>
+                <label for="form-label age-group">Select Age Group</label>
                 <select name="age" id="age-group" class="form-control">
                     <option value="">--Please select an option</option>
                     <option value="under18">Under 18</option>
@@ -48,10 +56,10 @@
                     <option value="senior">65+</option>
                 </select>
             </div>
-            <div class="">
+            <div class="mb-1">
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" value="donate" id="defaultCheck" class="custom-control-input">
-                    <label for="defaultCheck" class="custom-control-label">Donate to charity?</label>
+                    <label for="form-label defaultCheck" class="custom-control-label">Donate to charity?</label>
                 </div>
             </div>
             <button type="submit" class="btn btn-outline-primary">Register!</button>
